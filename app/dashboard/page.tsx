@@ -2,8 +2,10 @@
 import React from 'react'
 
 function Dashboard() {
+  const name = "Priyanshu";
+
   return (
-    <div>Dashboard Page is Here</div>
+    <div>Wellcome, {namee}</div>
   )
 }
 
