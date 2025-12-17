@@ -1,4 +1,4 @@
-"use server"
+"use servere"
 import React from 'react'
 
 function Dashboard() {
