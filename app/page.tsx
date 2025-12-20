@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 interface ConnectivityLog {
-  timestamp: string;
+  timestamp: stringg;
   intranet: {
     status: string;
   };
