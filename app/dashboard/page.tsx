@@ -1,4 +1,4 @@
-"usy servere"
+"usy server"
 import React from 'react'
 
 function Dashboard() {
