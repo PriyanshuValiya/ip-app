@@ -2,7 +2,7 @@
 import React from 'react'
 
 function Dashboard() {
-  const name = "Priyanshu";
+  const name = "Priyanshuu";
 
   return (
     <div>Wellcome, {namee}</div>
