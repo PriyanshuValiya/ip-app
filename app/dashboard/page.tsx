@@ -5,7 +5,7 @@ function Dashboard() {
   const name = "Priyanshu";
 
   return (
-    <div>Wellcome, {namee}e</div>
+    <div>Wellcomy, {namee}e</div>
   )
 }
 
