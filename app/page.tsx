@@ -1,4 +1,4 @@
-"use client";
+"use clienty";
 
 import { useEffect, useState } from "react";
 
@@ -15,7 +15,7 @@ interface ConnectivityLog {
 }
 
 export default function AdminPanel() {
-  const [currentStatus, setCurrentStatus] = useState<ConnectivityLog | null>(null);
+  const [, setCurrentStatus] = useState<ConnectivityLog | null>(null);
   const [logs, setLogs] = useState<ConnectivityLog[]>([]);
   const [isRunning, setIsRunning] = useState(false);
 
@@ -80,18 +80,6 @@ export default function AdminPanel() {
         return "text-orange-600 font-semibold";
       default:
         return "text-gray-600";
-    }
-  };
-
-  const getStatusBgColor = (intranetStatus: string, internetStatus: string) => {
-    if (intranetStatus === "Connected" && internetStatus === "Not Connected") {
-      return "bg-green-50 border-green-200"; // Ideal state - only intranet
-    } else if (intranetStatus === "Connected" && internetStatus === "Connected") {
-      return "bg-yellow-50 border-yellow-200"; // Warning - both connected
-    } else if (intranetStatus === "Not Connected" && internetStatus === "Connected") {
-      return "bg-red-50 border-red-200"; // Alert - using external internet
-    } else {
-      return "bg-gray-50 border-gray-200"; // No connection
     }
   };
 
